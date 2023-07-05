@@ -8,6 +8,9 @@ import { Parte2Component } from './parte2/parte2.component';
 import {MatCardModule} from '@angular/material/card';
 import { Parte1Component } from './parte1/parte1.component';
 import { SharedModule } from './shared/shared.module';
+import { MatIconModule } from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -21,11 +24,17 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatIconModule,
     SharedModule,
+    MatListModule,
+    MatDividerModule,
   ],
   exports: [
     MatCardModule,
+    MatIconModule,
     SharedModule,
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
