@@ -2,6 +2,12 @@
 $color: #08c0c0;
 $default: #DE1919;
 
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+    flex: auto;
+    margin: 100px;
+    padding: 20px;
+}
+

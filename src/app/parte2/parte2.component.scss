@@ -1,21 +1,10 @@
 @import '../../styles.scss';
 
 
-.example-spacer {
-    flex: 1 1 auto;
-  }
-
-.mat-toolbar {
-    background-color: $default;
-    color: white;
-}
-
-.container {
-    flex: auto;
-    margin: 100px;
-    padding: 20px;
-}
-
 .mat-card {
     border: 1px black;
+}
+
+.card-space {
+    margin: 5px;
 }

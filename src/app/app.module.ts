@@ -5,11 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Parte2Component } from './parte2/parte2.component';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import { Parte1Component } from './parte1/parte1.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -22,16 +20,12 @@ import { Parte1Component } from './parte1/parte1.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
     MatCardModule,
+    SharedModule,
   ],
   exports: [
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
