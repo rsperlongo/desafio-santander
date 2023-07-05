@@ -9,12 +9,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+import { Parte1Component } from './parte1/parte1.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Parte2Component,
+    Parte1Component,
   ],
   imports: [
     BrowserModule,
