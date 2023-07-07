@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {MatTableModule} from '@angular/material/table';
     SharedModule,
     MatListModule,
     MatDividerModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   exports: [
     MatCardModule,

@@ -1,12 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Products } from '../parte1/parte1.component';
-import { PRODUCTS } from '../mock-parte1/mock-parte1';
+import { HttpClient } from '@angular/common/http';
+import { Products } from '../parte1/parte1';
 
-interface Parte1 {
-  product: string;
-  amount: number;
-}
+const url = 'http://localhost:3000/indice';
 
 
 @Injectable({
@@ -16,9 +13,9 @@ interface Parte1 {
 
 export class Parte1Service {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getData(): Observable<Parte1> {
-    //
+  getAll(): Observable<Products[]> {
+    return this.http.get<Products[]>(url);
   }
 }
