@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+
 $color: #08c0c0;
 $default: #DE1919;
 
@@ -8,6 +10,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 h1 {
     font-size: 16px;
     font-weight: bold;
+}
+
+h2 {
+    font-size: 14px;
+    color: gray;
 }
 
 

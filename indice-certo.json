@@ -1,0 +1,44 @@
+{
+    "indice": [
+      {
+        "id": 1,
+        "product": "Débito Automático",
+        "amount": 20
+      },
+      {
+        "id": 2,
+        "product": "Cliente CERTO",
+        "amount": 69
+      },
+      {
+        "id": 3,
+        "product": "Consignado",
+        "amount": 70
+      },
+      {
+        "id": 4,
+        "product": "Kgiro",
+        "amount": 0
+      },
+      {
+        "id": 5,
+        "product": "Gestão Preventiva",
+        "amount": 60
+      },
+      {
+        "id": 6,
+        "product": "Cap PM",
+        "amount": 0
+      },
+      {
+        "id": 7,
+        "product": "Consórcio",
+        "amount": 150
+      },
+      {
+        "id": 8,
+        "product": "Seguros Open",
+        "amount": 177
+      }
+    ]
+  }

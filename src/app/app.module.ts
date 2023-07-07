@@ -11,6 +11,7 @@ import { SharedModule } from './shared/shared.module';
 import { MatIconModule } from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -28,13 +29,15 @@ import {MatDividerModule} from '@angular/material/divider';
     SharedModule,
     MatListModule,
     MatDividerModule,
+    MatTableModule
   ],
   exports: [
     MatCardModule,
     MatIconModule,
     SharedModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
