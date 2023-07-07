@@ -22,57 +22,18 @@
           <tr *ngFor="let product of products">
             <td colspan="4">{{ product.product }}</td>
             <td>
-              <span *ngIf="product.amount !== 0"
+              <span *ngIf="product.amount == '0,00'"
+                ><img
+                  class="logo"
+                  src="../../assets/img/gray-logo-santander.jpeg" /></span
+              >
+              <span *ngIf="product.amount !== '0,00'"
                 ><img
                   class="logo"
                   src="../../assets/img/logo-santander-icon-.png" /></span
               >{{product.amount}}
             </td>
           </tr>
-        <!--   <tr>
-            <td colspan="4">Cliente CERTO</td>
-            <td>
-              <span
-                ><img
-                  class="logo"
-                  src="../../assets/img/logo-santander-icon-.png" /></span
-              >69,00
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4">Consignado</td>
-            <td>
-              <span
-                ><img
-                  class="logo"
-                  src="../../assets/img/logo-santander-icon-.png" /></span
-              >70,99
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4">Kgiro</td>
-            <td>
-              <span>
-                <img
-                  class="logo"
-                  src="../../assets/img/logo-santander-icon-.png"
-                />
-              </span>
-              0
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4">Gestão Preventiva</td>
-            <td>
-              <span>
-                <img
-                  class="logo"
-                  src="../../assets/img/logo-santander-icon-.png"
-                />
-              </span>
-              60,28
-            </td>
-          </tr> -->
         </tbody>
       </table>
     </mat-card-content>

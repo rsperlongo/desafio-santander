@@ -3,42 +3,42 @@
       {
         "id": 1,
         "product": "Débito Automático",
-        "amount": 20
+        "amount": "20,00"
       },
       {
         "id": 2,
         "product": "Cliente CERTO",
-        "amount": 69
+        "amount": "69,00"
       },
       {
         "id": 3,
         "product": "Consignado",
-        "amount": 70
+        "amount": "70,99"
       },
       {
         "id": 4,
         "product": "Kgiro",
-        "amount": 0
+        "amount": "0,00"
       },
       {
         "id": 5,
         "product": "Gestão Preventiva",
-        "amount": 60
+        "amount": "60,68"
       },
       {
         "id": 6,
         "product": "Cap PM",
-        "amount": 0
+        "amount": "0,00"
       },
       {
         "id": 7,
         "product": "Consórcio",
-        "amount": 150
+        "amount": "150,00"
       },
       {
         "id": 8,
         "product": "Seguros Open",
-        "amount": 177
+        "amount": "177,41"
       }
     ]
   }
