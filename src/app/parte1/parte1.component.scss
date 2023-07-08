@@ -17,15 +17,27 @@
 }
 
 table {
-    width: 90%;
+    width: 95%;
     height: 30%;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 td {
     color: #575353;
-    align-items: end;
+    float: inline-end;
+    width: 75%;
 }
+
+tbody{
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+}
+
+.tbodyDiv{
+    max-height: clamp(5em,20vh,350px);
+    overflow: auto;
+    }
 
 .sum {
     font-size: 40px;
@@ -44,4 +56,13 @@ td {
     margin-right: 5px;
     align-items: center;
 }
-  
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 14px;
+    color: gray;
+}
