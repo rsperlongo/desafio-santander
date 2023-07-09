@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Chart} from 'chart.js/auto';
 import { HttpClient } from '@angular/common/http';
+import { Abertura, Atividades } from './parte2';
 
 @Component({
   selector: 'app-parte2',
@@ -9,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class Parte2Component implements OnInit {
+  
   public chart: any;
 
   constructor(private http: HttpClient) {}
@@ -19,13 +21,15 @@ export class Parte2Component implements OnInit {
   }
 
   createChart() {
+    const url = 'http://localhost:3004/agencias';
 
-    this.http.get<any>('your-api-url').subscribe(data => {
-      const labels = data.map((item: { label: any; }) => item.label);
-      const values = data.map((item: { value: any; }) => item.value);
+    this.http.get<Abertura[]>(url).subscribe(data => {
+      const labels = data.map((abertura) => abertura.concluidas);
+      const values = data.map((abertura) => abertura.parciais);
+
     const ctx = document.getElementById('myChart') as HTMLCanvasElement;
 
-    const myChart = new Chart(ctx, {
+    this.chart = new Chart(ctx, {
       type: 'doughnut',
       options: {
         cutout:100,
@@ -40,23 +44,31 @@ export class Parte2Component implements OnInit {
         }
       },
       data: {
-        labels: labels,
+        labels: ['% Marcações Completas', '% Marcações Parciais' ],
         datasets: [{
-          data: values,
+          data: labels, 
           backgroundColor: [
             'rgb(195, 198, 198)',
             'rgb(78, 192, 221)',
           ],
           hoverOffset: 2,
-        }]
+        }],
       }  
     })
   }
 )}
 
   createChart2() {
+
+    const url = 'http://localhost:3001/agencias';
+
+    this.http.get<Atividades[]>(url).subscribe(data => {
+      const labels = data.map((atividades) => atividades.concluidas);
+      const values = data.map((atividades) => atividades.percentual);
+
+    const ctx = document.getElementById('atividades') as HTMLCanvasElement;
     
-    this.chart = new Chart("atividades", {
+    this.chart = new Chart(ctx, {
       type: 'doughnut',
       options: {
         cutout:100,
@@ -71,11 +83,9 @@ export class Parte2Component implements OnInit {
         }
       },
       data: {
-        labels: [
-          'Qtdade Ativades Concluídas',
-        ],
+        labels: ['Qtde de Atividades Concluídas'],
         datasets: [{
-          data: [70, 200],
+          data: values,
           backgroundColor: [
             'rgb(78, 192, 221)',
             'rgb(195, 198, 198)',
@@ -86,4 +96,5 @@ export class Parte2Component implements OnInit {
       }  
     })
   }
+ )}
 }

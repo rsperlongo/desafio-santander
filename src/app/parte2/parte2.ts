@@ -6,3 +6,12 @@ export interface Atividades {
     periodo: number;
     percentual: number;
 }
+
+export interface Abertura {
+    cdUn: string,
+    nmAg: string,
+    parciais: number,
+    concluidas: number,
+    periodo: number,
+    percentual: number,
+}
