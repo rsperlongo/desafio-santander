@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "serve": " json-server --watch indice-certo.json",
+    "database": "json-server --watch atividades-mensais.json --port 3004"
   },
   "private": true,
   "dependencies": {

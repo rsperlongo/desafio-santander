@@ -11,13 +11,13 @@
                       </mat-form-field>
                 </mat-card-header>
                 <mat-card-content>
-                    <div class="row mb-2 pb-2">
+                    <div class="row mb-2 pb-2 mt-2">
                         <div class="col">
                             <h2>Abertura e Fechamento das lojas</h2>
                             <div class="row align-items-center">
                                 <div class="col-8">
                                     <div class="chart-container">
-                                        <canvas id="MyChart">{{ chart }}</canvas>
+                                        <canvas id="myChart">{{ chart }}</canvas>
                                     </div>
                                 </div>
                                 <div class="col-4">
@@ -27,6 +27,16 @@
                         </div>
                         <div class="col">
                             <h2>Atividades Mensais</h2>
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="chart-container-atividades">
+                                        <canvas id="atividades">{{ chart }}</canvas>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    Bar code
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </mat-card-content>
